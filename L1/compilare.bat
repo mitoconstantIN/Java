@@ -1,0 +1,1 @@
+"c:\java\jdk\bin\javac" PrimulApplet.java > erori.txt 2>&1

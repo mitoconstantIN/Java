@@ -1,0 +1,1 @@
+c:\lang\jdk\bin\javac Exemple.java >erori.txt 2>&1
