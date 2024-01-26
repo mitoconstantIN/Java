@@ -1,0 +1,37 @@
+import java.awt.*;
+import java.awt.event.*;
+
+public class SimpleButtonExample extends Frame {
+    Button button;
+
+    public SimpleButtonExample() {
+        button = new Button("Apasă-mă");
+        button.setBounds(50, 50, 80, 30);
+        add(button);
+
+        // Adăugăm un ascultător de evenimente pentru fereastra curentă
+        this.handleEvent(new Event(this, Event.ACTION_EVENT, button));
+    }
+
+    public boolean handleEvent(Event e) {
+        if (e.target == button && e.id == Event.ACTION_EVENT) {
+            System.out.println("salut");
+            return true;
+        }
+        return super.handleEvent(e);
+    }
+
+    public static void main(String[] args) {
+        SimpleButtonExample frame = new SimpleButtonExample();
+        frame.setSize(200, 200);
+        frame.setLayout(null);
+        frame.setVisible(true);
+
+        // Închide fereastra la apăsarea butonului de închidere
+        frame.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
+    }
+}
