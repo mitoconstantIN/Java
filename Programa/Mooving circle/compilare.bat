@@ -1,0 +1,1 @@
+"c:\java\java8\bin\javac" CercInteractiv.java > erori.txt 2>&1

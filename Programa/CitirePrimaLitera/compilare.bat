@@ -1,0 +1,1 @@
+"c:\java\java8\bin\javac" CitireCaracterTxt.java > erori.txt 2>&1

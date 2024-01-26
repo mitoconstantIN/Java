@@ -1,0 +1,1 @@
+"c:\java\java8\bin\javac" PanouAutentificare.java > erori.txt 2>&1
